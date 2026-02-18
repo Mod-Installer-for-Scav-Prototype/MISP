@@ -1,7 +1,18 @@
-# Tauri + Vanilla TS
+# MISP (Mod installer for Scav Prototype)
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Typescript.
 
-## Recommended IDE Setup
+# Develop
+Project is based on Tauri, it does have Vanilla with typescript frontend.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+To begin install all packages with<br>
+```
+npm install
+```
+Then to run development enviroment<br>
+```
+npm run tauri dev
+```
+To build application<br>
+```
+npm run tauri build
+```
