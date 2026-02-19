@@ -1,0 +1,14 @@
+:root {
+  --background: #212128;
+  --color: #F0F0F0;
+
+  --primary: #4B3726;
+  --primary-selected: #704927;
+  --primary-hover: #553D28;
+  --primary-darker: #2D251F;
+
+  --accent: #EF944A;
+  --second: #C7844C;
+  
+  --body-margin: 20px;
+}
