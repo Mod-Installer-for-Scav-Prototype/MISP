@@ -4,11 +4,13 @@
 
   --primary: #4B3726;
   --primary-selected: #704927;
-  --primary-hover: #553D28;
+  --primary-hover: #5f4128;
   --primary-darker: #2D251F;
 
   --accent: #EF944A;
   --second: #C7844C;
+  --second-trans: #c7834c70;
   
   --body-margin: 20px;
+  --roundness: 1;
 }

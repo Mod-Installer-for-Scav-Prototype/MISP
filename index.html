@@ -11,14 +11,35 @@
   <body>
     <main class="container">
       <top class="top">
-        <left>
+        <left class="left">
           <image src="src/assets/MISP_Logo.png" class="logo">
           <span>MISP</span>
         </left>
-        <centre><search><image src="src/assets/Icons/search.svg"><input placeholder="Search for mods..."></search></centre>
-        <right></right>
+        <centre class="centre"><search class="search"><image class="search_icon" src="src/assets/Icons/search.svg"><input class="input" placeholder="Search mods..."></search></centre>
+        <right class="right">
+          <box class="box">
+          <button><image class="right_image lower" src="src/assets/Icons/min.svg"></button>
+          <button><image class="right_image" src="src/assets/Icons/window.svg"></button>
+          <button><image class="right_image" src="src/assets/Icons/close.svg"></button>
+          </box>
+          </right>
       </top>
-      <bottom class="bottom"></bottom>
+      <bottom class="bottom">
+        <left class="left">
+          <span>Select instance:</span>
+          <dropdown class="dropdown">
+            <span class="placeholder">Select instance...</span>
+            <box class="box">
+              <so class="option selected" value="volvo"><span>My modpack</span><image class="image" src="src/assets/Icons/checkmark.svg"></so>
+              <so class="option" value="saab"><span>Non-modded V5P5</span><image class="image" src="src/assets/Icons/checkmark.svg"></image></so>
+              <so class="option" value="mercedes"><span>Version 5 Demo 1</span><image class="image" src="src/assets/Icons/checkmark.svg"></image></so>
+              <add class="add"><span>New instance +</span></add>
+            </box>
+          </dropdown>
+        </left>
+        <centre class="centre">Centre</centre>
+        <right class="right">Right</right>
+      </bottom>
     </main>
   </body>
 </html>

@@ -1,0 +1,117 @@
+.bottom{
+  background-color: var(--background);
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.bottom .left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom .centre {
+  width: 100%;
+}
+
+.bottom .right {
+  width: 100%;
+}
+
+.bottom .left .dropdown{
+  font-family: 'Cabin Condensed';
+  color: var(--color);
+  background: var(--primary);
+  height: 35px;
+  padding: 0;
+  outline: 0;
+  border: 2px solid var(--second);
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom .left .dropdown .placeholder{
+  position: relative;
+  height: 35px;
+  width: 100%;
+  padding: 8px 0 0 clamp(5px, calc(20%) - 20px ,20px);
+}
+
+.bottom .left .dropdown .box{
+  font-size: 18px;
+  display: none;
+  position: relative;
+  margin-top: 6px;
+  background-color: var(--primary-darker);
+  border: 2px solid var(--second);
+  border-top: 1px solid var(--second-trans);
+  margin-left: -2px;
+  width: calc(100%);
+  /* padding: 0 clamp(8px, calc(4vw - 20px), 30px); */
+  flex-direction: column;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.bottom .left .dropdown .box .add{
+  font-family: 'Cabin';
+  min-height: 30px;
+  max-height: 50px;
+  background-color: var(--primary);
+  text-align: center;
+  font-size: 14px;
+  color: var(--accent);
+  height: 30px;
+  display: flex;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: 1px var(--second) solid;
+}
+
+.bottom .left .dropdown .box .add:hover{
+  background-color: var(--primary-hover);
+}
+
+.bottom .left .dropdown .box .add span{
+  margin: auto;
+}
+
+.bottom .left .dropdown .box .option{
+  min-height: 40px;
+  max-height: calc(40px * 2);
+  display: flex;
+  border-bottom: 1px solid var(--second-trans);
+}
+
+.bottom .left .dropdown .box .option span{
+  margin: auto clamp(0px, calc(10% - 10px), 25px);
+}
+
+.bottom .left .dropdown .box .option .image{
+  display: none;
+}
+
+.bottom .left .dropdown .box .selected .image{
+  display: block;
+  height: 35px;
+  margin: auto;
+  margin-right: clamp(0px, calc(10% - 10px), 10px);
+}
+
+.bottom .left .dropdown:hover .box{
+  display: flex;
+}
+
+.bottom .left .dropdown:hover{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+.bottom .left .dropdown .box .option:hover{
+  background-color: var(--primary-hover);
+}

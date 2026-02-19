@@ -1,10 +1,12 @@
 /* Import other css files */
 @import url("root.css");
 @import url("top.css");
+@import url("bottom.css");
 
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
 
 ::placeholder{
   color: var(--color);
@@ -27,10 +29,4 @@ body{
   position: absolute;
   height: calc(100% - var(--body-margin) * 2);
   width: calc(100% - var(--body-margin) * 2);
-}
-
-.bottom{
-  height: calc(100% - 70px);
-  width: 100%;
-  background-color: var(--background);
 }
