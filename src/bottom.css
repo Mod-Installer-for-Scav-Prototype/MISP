@@ -34,11 +34,21 @@
   flex-direction: column;
 }
 
+.bottom .left .dropdown .hover {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+
+}
+
 .bottom .left .dropdown .placeholder{
   position: relative;
   height: 35px;
-  width: 100%;
+  width: cacl(100% - 50px);
   padding: 8px 0 0 clamp(5px, calc(20%) - 20px ,20px);
+  white-space: nowrap;
+  max-width: 25vw;
+  overflow: hidden;
 }
 
 .bottom .left .dropdown .box{
@@ -114,4 +124,14 @@
 
 .bottom .left .dropdown .box .option:hover{
   background-color: var(--primary-hover);
+}
+
+.bottom .left .dropdown .hover .image{
+  height: 120%;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.bottom .left .dropdown:hover .hover .image {
+  rotate: 180deg;
 }

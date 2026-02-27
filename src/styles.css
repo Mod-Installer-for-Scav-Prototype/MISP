@@ -2,6 +2,7 @@
 @import url("root.css");
 @import url("top.css");
 @import url("bottom.css");
+@import url("media.css");
 
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');

@@ -1,0 +1,16 @@
+@media (max-width: 800px) {
+  .top .left .logo {
+    display: none;
+  }
+
+  .bottom .left .dropdown .hover .image{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .top .left {
+    display: none;
+  }
+  
+}

@@ -17,19 +17,6 @@
   height: 60px;
 }
 
-@media (max-width: 800px) {
-  .top .left .logo {
-    display: none;
-  }
-
-}
-
-@media (max-width: 600px) {
-  .top .left {
-    display: none;
-  }
-}
-
 
 .top .left span{
   font-weight: 900;
