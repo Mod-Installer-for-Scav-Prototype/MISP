@@ -31,3 +31,11 @@ body{
   height: calc(100% - var(--body-margin) * 2);
   width: calc(100% - var(--body-margin) * 2);
 }
+
+.window-drag{
+  position: absolute;
+  height: 70px;
+  width: calc(100% - 140px);
+  z-index: 1;
+  cursor: move;
+}

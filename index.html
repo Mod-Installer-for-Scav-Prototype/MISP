@@ -7,8 +7,8 @@
     <title>Tauri App</title>
     <script type="module" src="/src/main.ts" defer></script>
   </head>
-
   <body>
+    <windowdrag class="window-drag"></windowdrag>
     <main class="container">
       <top class="top">
         <left class="left">
@@ -18,9 +18,9 @@
         <centre class="centre"><search class="search"><image class="search_icon" src="src/assets/Icons/search.svg"><input class="input" placeholder="Search mods..."></search></centre>
         <right class="right">
           <box class="box">
-          <button><image class="right_image lower" src="src/assets/Icons/min.svg"></button>
-          <button><image class="right_image" src="src/assets/Icons/window.svg"></button>
-          <button><image class="right_image" src="src/assets/Icons/close.svg"></button>
+          <button class="min"><image class="right_image lower" src="src/assets/Icons/min.svg"></button>
+          <button class="max"><image class="right_image" src="src/assets/Icons/window.svg"></button>
+          <button class="close"><image class="right_image" src="src/assets/Icons/close.svg"></button>
           </box>
           </right>
       </top>
@@ -40,7 +40,9 @@
             </box>
           </dropdown>
         </left>
-        <centre class="centre">Centre</centre>
+        <centre class="centre">Centre
+          
+        </centre>
         <right class="right">Right</right>
       </bottom>
     </main>

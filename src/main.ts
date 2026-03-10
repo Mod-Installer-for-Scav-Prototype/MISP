@@ -1,22 +1,25 @@
-import { invoke } from "@tauri-apps/api/core";
+import { getCurrentWindow } from '@tauri-apps/api/window';   
 
-let greetInputEl: HTMLInputElement | null;
-let greetMsgEl: HTMLElement | null;
-
-async function greet() {
-  if (greetMsgEl && greetInputEl) {
-    // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    greetMsgEl.textContent = await invoke("greet", {
-      name: greetInputEl.value,
+for (const x of document.getElementsByClassName("window-drag")) {
+    (x as HTMLElement).addEventListener("mousedown", async () => {
+         await getCurrentWindow().startDragging();
     });
-  }
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  greetInputEl = document.querySelector("#greet-input");
-  greetMsgEl = document.querySelector("#greet-msg");
-  document.querySelector("#greet-form")?.addEventListener("submit", (e) => {
-    e.preventDefault();
-    greet();
-  });
-});
+for (const x of document.getElementsByClassName("min")) {
+    (x as HTMLElement).addEventListener("click", async () => {
+         await getCurrentWindow().minimize();
+    });
+}
+
+for (const x of document.getElementsByClassName("max")) {
+    (x as HTMLElement).addEventListener("click", async () => {
+         await getCurrentWindow().toggleMaximize();
+    });
+}
+
+for (const x of document.getElementsByClassName("close")) {
+    (x as HTMLElement).addEventListener("click", async () => {
+         await getCurrentWindow().close();
+    });
+}

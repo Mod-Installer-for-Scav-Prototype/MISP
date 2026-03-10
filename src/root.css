@@ -8,9 +8,10 @@
   --primary-darker: #2D251F;
 
   --accent: #EF944A;
+  --accent-hover: #fcaf70;
   --second: #C7844C;
   --second-trans: #c7834c70;
   
-  --body-margin: 20px;
+  --body-margin: 15px;
   --roundness: 1;
 }
